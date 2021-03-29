@@ -1,0 +1,17 @@
+certifi==2020.12.5
+click==7.1.2
+Flask==1.1.2
+itsdangerous==1.1.0
+Jinja2 @ file:///home/conda/feedstock_root/build_artifacts/jinja2_1612119311452/work
+joblib @ file:///home/conda/feedstock_root/build_artifacts/joblib_1612898609989/work
+MarkupSafe @ file:///D:/bld/markupsafe_1610127696479/work
+numpy @ file:///D:/bld/numpy_1616933410625/work
+pandas @ file:///D:/bld/pandas_1614698123791/work
+python-dateutil==2.8.1
+pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1612179539967/work
+scikit-learn @ file:///D:/bld/scikit-learn_1611079929791/work
+scipy @ file:///C:/bld/scipy_1616878817947/work
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1590081179328/work
+threadpoolctl @ file:///tmp/tmp79xdzxkt/threadpoolctl-2.1.0-py3-none-any.whl
+Werkzeug==1.0.1
+wincertstore==0.2
