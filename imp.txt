@@ -1,0 +1,61 @@
+rating,no. of competitors, hourly=0, employer_provided = 0, is head office and office state Same?,company_age
+skills [Python, spark, aws, excel]
+desc_len = 3788.521505
+size = [1001 to 5000, 501 to 1000, 10000+, 201 to 500, 51 to 200, 5001 to 10000, 1 to 50, Unknown , -1]
+Type of ownership =[Company - Private, Company - Public, Nonprofit Organization, Subsidiary or Business Segment, Government,Hospital, College / University, Other Organization, School / School District, -1, Unknown]
+Industry = ['Aerospace & Defense', 'Health Care Services & Hospitals',
+       'Security Services', 'Energy', 'Advertising & Marketing',
+       'Real Estate', 'Banks & Credit Unions', 'Consulting', 'Internet',
+       'Other Retail Stores', 'Research & Development',
+       'Department, Clothing, & Shoe Stores', 'Biotech & Pharmaceuticals',
+       'Motion Picture Production & Distribution',
+       'Enterprise Software & Network Solutions', 'Insurance Carriers',
+       'Insurance Agencies & Brokerages', 'Logistics & Supply Chain',
+       'Telecommunications Services', 'IT Services',
+       'Computer Hardware & Software', '-1',
+       'Consumer Products Manufacturing', 'Industrial Manufacturing',
+       'Metals Brokers', 'Financial Transaction Processing',
+       'Sporting Goods Stores', 'Staffing & Outsourcing', 'Wholesale',
+       'Mining', 'Financial Analytics & Research', 'Federal Agencies',
+       'Education Training Services',
+       'Transportation Equipment Manufacturing', 'Farm Support Services',
+       'TV Broadcast & Cable Networks',
+       'Architectural & Engineering Services', 'Brokerage Services',
+       'Travel Agencies', 'Religious Organizations',
+       'Colleges & Universities', 'Investment Banking & Asset Management',
+       'Lending', 'Gambling', 'Food & Beverage Manufacturing',
+       'Gas Stations', 'Transportation Management', 'Video Games',
+       'Trucking', 'Social Assistance', 'Auctions & Galleries',
+       'K-12 Education', 'Telecommunications Manufacturing',
+       'Stock Exchanges', 'Construction', 'Accounting',
+       'Health Care Products Manufacturing', 'Health, Beauty, & Fitness',
+       'Consumer Product Rental', 'Beauty & Personal Accessories Stores']
+
+Sector = ['Aerospace & Defense', 'Health Care', 'Business Services',
+       'Oil, Gas, Energy & Utilities', 'Real Estate', 'Finance',
+       'Information Technology', 'Retail', 'Biotech & Pharmaceuticals',
+       'Media', 'Insurance', 'Transportation & Logistics',
+       'Telecommunications', '-1', 'Manufacturing', 'Mining & Metals',
+       'Government', 'Education', 'Agriculture & Forestry',
+       'Travel & Tourism', 'Non-Profit',
+       'Arts, Entertainment & Recreation',
+       'Construction, Repair & Maintenance', 'Accounting & Legal',
+       'Consumer Services']
+Revenue = ['$50 to $100 million (USD)', '$2 to $5 billion (USD)',
+       '$100 to $500 million (USD)', '$500 million to $1 billion (USD)',
+       'Unknown / Non-Applicable', '$1 to $2 billion (USD)',
+       '$25 to $50 million (USD)', '$10+ billion (USD)',
+       '$1 to $5 million (USD)', '$10 to $25 million (USD)',
+       '$5 to $10 billion (USD)', 'Less than $1 million (USD)',
+       '$5 to $10 million (USD)', '-1']
+job_state = [' NM', ' MD', ' FL', ' WA', ' NY', ' TX', ' CA', ' VA', ' MA',
+       ' NJ', ' CO', ' IL', ' KY', ' OR', ' CT', ' MI', ' DC', ' OH',
+       ' AL', ' MO', ' PA', ' GA', ' IN', ' LA', ' WI', ' NC', ' AZ',
+       ' NE', ' MN', ' Los Angeles', ' UT', ' TN', ' DE', ' ID', ' RI',
+       ' IA', ' SC', ' KS']
+Job Simple = ['data scientist', 'senior/associate scientist', 'data analyst',
+       'data engineer', 'Analytics Consultant', 'director', nan,
+       'data modeler', 'manager', 'mle', 'vp']
+seniority = ['na', 'senior', 'jr']
+
+['Rating', 'count_Competitors', 'hourly', 'employer_provided', 'same_state', 'company_age', 'python_yn', 'spark', 'aws', 'excel','desc_len', 'Size_-1', 'Size_1 to 50', 'Size_10000+', 'Size_1001 to 5000', 'Size_201 to 500', 'Size_5001 to 10000', 'Size_501 to 1000', 'Size_51 to 200', 'Size_Unknown', 'Type of ownership_-1', 'Type of ownership_College / University', 'Type of ownership_Company - Private', 'Type of ownership_Company - Public', 'Type of ownership_Government', 'Type of ownership_Hospital', 'Type of ownership_Nonprofit Organization', 'Type of ownership_Other Organization', 'Type of ownership_School / School District', 'Type of ownership_Subsidiary or Business Segment', 'Type of ownership_Unknown', 'Industry_-1', 'Industry_Accounting', 'Industry_Advertising & Marketing', 'Industry_Aerospace & Defense', 'Industry_Architectural & Engineering Services', 'Industry_Auctions & Galleries', 'Industry_Banks & Credit Unions', 'Industry_Beauty & Personal Accessories Stores', 'Industry_Biotech & Pharmaceuticals', 'Industry_Brokerage Services', 'Industry_Colleges & Universities', 'Industry_Computer Hardware & Software', 'Industry_Construction', 'Industry_Consulting', 'Industry_Consumer Product Rental', 'Industry_Consumer Products Manufacturing', 'Industry_Department, Clothing, & Shoe Stores', 'Industry_Education Training Services', 'Industry_Energy', 'Industry_Enterprise Software & Network Solutions',	'Industry_Farm Support Services', 'Industry_Federal Agencies', 'Industry_Financial Analytics & Research', 'Industry_Financial Transaction Processing', 'Industry_Food & Beverage Manufacturing', 'Industry_Gambling', 'Industry_Gas Stations', 'Industry_Health Care Products Manufacturing', 'Industry_Health Care Services & Hospitals', 'Industry_Health, Beauty, & Fitness', 'Industry_IT Services', 'Industry_Industrial Manufacturing', 'Industry_Insurance Agencies & Brokerages', 'Industry_Insurance Carriers', 'Industry_Internet', 'Industry_Investment Banking & Asset Management', 'Industry_K-12 Education', 'Industry_Lending','Industry_Logistics & Supply Chain', 'Industry_Metals Brokers', 'Industry_Mining', 'Industry_Motion Picture Production & Distribution', 'Industry_Other Retail Stores', 'Industry_Real Estate', 'Industry_Religious Organizations', 'Industry_Research & Development', 'Industry_Security Services', 'Industry_Social Assistance', 'Industry_Sporting Goods Stores', 'Industry_Staffing & Outsourcing', 'Industry_Stock Exchanges', 'Industry_TV Broadcast & Cable Networks', 'Industry_Telecommunications Manufacturing', 'Industry_Telecommunications Services', 'Industry_Transportation Equipment Manufacturing',  'Industry_Transportation Management', 'Industry_Travel Agencies', 'Industry_Trucking', 'Industry_Video Games', 'Industry_Wholesale', 'Sector_-1', 'Sector_Accounting & Legal', 'Sector_Aerospace & Defense', 'Sector_Agriculture & Forestry', 'Sector_Arts, Entertainment & Recreation', 'Sector_Biotech & Pharmaceuticals', 'Sector_Business Services', 'Sector_Construction, Repair & Maintenance', 'Sector_Consumer Services', 'Sector_Education', 'Sector_Finance', 'Sector_Government', 'Sector_Health Care', 'Sector_Information Technology', 'Sector_Insurance', 'Sector_Manufacturing', 'Sector_Media', 'Sector_Mining & Metals', 'Sector_Non-Profit', 'Sector_Oil, Gas, Energy & Utilities', 'Sector_Real Estate', 'Sector_Retail', 'Sector_Telecommunications','Sector_Transportation & Logistics', 'Sector_Travel & Tourism', 'Revenue_$1 to $2 billion (USD)', 'Revenue_$1 to $5 million (USD)', 'Revenue_$10 to $25 million (USD)', 'Revenue_$10+ billion (USD)', 'Revenue_$100 to $500 million (USD)', 'Revenue_$2 to $5 billion (USD)', 'Revenue_$25 to $50 million (USD)', 'Revenue_$5 to $10 billion (USD)', 'Revenue_$5 to $10 million (USD)', 'Revenue_$50 to $100 million (USD)', 'Revenue_$500 million to $1 billion (USD)', 'Revenue_-1', 'Revenue_Less than $1 million (USD)', 'Revenue_Unknown / Non-Applicable', 'job_state_ AL', 'job_state_ AZ', 'job_state_ CA', 'job_state_ CO', 'job_state_ CT', 'job_state_ DC', 'job_state_ DE', 'job_state_ FL', 'job_state_ GA', 'job_state_ IA', 'job_state_ ID', 'job_state_ IL', 'job_state_ IN', 'job_state_ KS', 'job_state_ KY', 'job_state_ LA', 'job_state_ Los Angeles', 'job_state_ MA', 'job_state_ MD', 'job_state_ MI', 'job_state_ MN', 'job_state_ MO', 'job_state_ NC', 'job_state_ NE', 'job_state_ NJ', 'job_state_ NM', 'job_state_ NY', 'job_state_ OH', 'job_state_ OR', 'job_state_ PA', 'job_state_ RI', 'job_state_ SC', 'job_state_ TN', 'job_state_ TX', 'job_state_ UT', 'job_state_ VA', 'job_state_ WA', 'job_state_ WI', 'Job Simple_Analytics Consultant', 'Job Simple_data analyst', 'Job Simple_data engineer', 'Job Simple_data modeler', 'Job Simple_data scientist', 'Job Simple_director', 'Job Simple_manager', 'Job Simple_mle', 'Job Simple_senior/associate scientist', 'Job Simple_vp', 'seniority_jr', 'seniority_na', 'seniority_senior']
