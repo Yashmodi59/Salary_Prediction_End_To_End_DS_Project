@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Salary Prediction
+        </title>
+    </head>
+    <body bgcolor="cyan">
+            <h1> Data Science Salary Prediction</h1>
+            <form methods ="POST", action="{{url_for('home')}}">
+                <b> 
+                    <center><h2>Name of Company:</h2> <input type="text", name="noc" placeholder="name of company"><br></center>
+                    Rating : <input type="number", name = "rate", placeholder="Out of 5"><br>
+                    Number of Competitors : <input type="number", name = "competitors", placeholder="between 0 to 10"><br>
+                    <!-- hourly : <input type="number", name = "rate", placeholder="Out of 5"><br> -->
+                    <!-- employer_provided : <input type="number", name = "rate", placeholder="Out of 5"><br> -->
+                    Same State : <input type="number", name = "same_state", placeholder="0/1"><br>
+                    Company Age : <input type="number", name = "age", placeholder="Add age"><br>
+                    Skills:   <input type="checkbox" id="skill1" name="skill1" value="Python">
+                    <label for="skill1"> Python</label><br>
+                    <input type="checkbox" id="skill2" name="skill2" value="Spark">
+                    <label for="skill2"> Spark</label><br>
+                    <input type="checkbox" id="skill3" name="skill3" value="Aws">
+                    <label for="skill3"> Aws</label><br>
+                    <input type="checkbox" id="skill4" name="skill4" value="Excel">
+                    <label for="skill4"> Excel</label><br><br>       
+                    <!-- desc_len : <input type="number", name = "rate", placeholder="Out of 5"><br> -->
+                    Size of Company:   <input type="radio" id="size1" name="size1" value="Size_-1">
+                    <label for="size1"> Size_-1</label><br>
+                    <input type="radio" id="size2" name="size2" value="Size_1 to 50">
+                    <label for="size2"> Size_1 to 50</label><br>
+                    <input type="radio" id="size3" name="size3" value="Size_10000+">
+                    <label for="size3"> Size_10000+</label><br>
+                    <input type="radio" id="size4" name="size4" value="Size_1001 to 5000">
+                    <label for="size4"> Size_1001 to 5000</label><br>
+                    <input type="radio" id="size5" name="size5" value="Size_201 to 500">
+                    <label for="size5"> Size_201 to 500</label><br>
+                    <input type="radio" id="size6" name="size6" value="Size_5001 to 10000">
+                    <label for="size6"> Size_5001 to 10000</label><br>
+                    <input type="radio" id="size7" name="size7" value="Size_501 to 1000">
+                    <label for="size7"> Size_501 to 1000</label><br>
+                    <input type="radio" id="size8" name="size8" value="Size_51 to 200">
+                    <label for="size8"> Size_51 to 200</label><br>
+                    <input type="radio" id="size9" name="size9" value="Size_Unknown">
+                    <label for="size9"> Size_Unknown</label><br>
+                    <label for="Too">Type of ownership:</label>
+                    <select name="Too" id="Too">
+                      <option value="Type of ownership_Company - Private">Company - Private</option>
+                      <option value="Type of ownership_Company - Public">Company - Public</option>
+                      <option value="Type of ownership_Nonprofit Organization">Nonprofit Organization</option>
+                      <option value="Type of ownership_Subsidiary or Business Segment">Subsidiary or Business Segment</option>
+                      <option value="Type of ownership_Government">Government</option>
+                      <option value="Type of ownership_Hospital">Hospital</option>
+                      <option value="Type of ownership_College / University">College / University</option>
+                      <option value="Type of ownership_Other Organization">Other Organization</option>
+                      <option value="Type of ownership_School / School District">School / School District</option>
+                      <option value="Type of ownership_-1">-1</option>
+                      <option value="Type of ownership_Unknown">Unknown</option>
+                    </select><br>
+                    <label for="IND">Type of Industry:</label>
+                    <select name="IND" id="IND">
+                        <option value="Industry_-1">Industry_-1</option>
+                        <option value="Industry_Accounting">Industry_Accounting</option>
+                        <option value="Industry_Advertising & Marketing">Industry_Advertising & Marketing</option>
+                        <option value="Industry_Aerospace & Defense">Industry_Aerospace & Defense</option>
+                        <option value="Industry_Architectural & Engineering Services">Industry_Architectural & Engineering Services</option>
+                        <option value="Industry_Auctions & Galleries">Industry_Auctions & Galleries</option>
+                        <option value="Industry_Banks & Credit Unions">Industry_Banks & Credit Unions</option>
+                        <option value="Industry_Beauty & Personal Accessories Stores">Industry_Beauty & Personal Accessories Stores</option>
+                        <option value="Industry_Biotech & Pharmaceuticals">Industry_Biotech & Pharmaceuticals</option>
+                        <option value="Industry_Brokerage Services">Industry_Brokerage Services</option>
+                        <option value="Industry_Colleges & Universities">Industry_Colleges & Universities</option>
+                        <option value="Industry_Computer Hardware & Software">Industry_Computer Hardware & Software</option>
+                        <option value="Industry_Construction">Industry_Construction</option>
+                        <option value="Industry_Consulting">Industry_Consulting</option>
+                        <option value="Industry_Consumer Product Rental">Industry_Consumer Product Rental</option>
+                        <option value="Industry_Consumer Products Manufacturing">Industry_Consumer Products Manufacturing</option>
+                        <option value="Industry_Department, Clothing, & Shoe Stores">Industry_Department, Clothing, & Shoe Stores</option>
+                        <option value="Industry_Education Training Services">Industry_Education Training Services</option>
+                        <option value="Industry_Energy">Industry_Energy</option>
+                        <option value="Industry_Enterprise Software & Network Solutions">Industry_Enterprise Software & Network Solutions</option>
+                        <option value="Industry_Farm Support Services">Industry_Farm Support Services</option>
+                        <option value="Industry_Federal Agencies">Industry_Federal Agencies</option>
+                        <option value="Industry_Financial Analytics & Research">Industry_Financial Analytics & Research</option>
+                        <option value="Industry_Financial Transaction Processing">Industry_Financial Transaction Processing</option>
+                        <option value="Industry_Food & Beverage Manufacturing">Industry_Food & Beverage Manufacturing</option>
+                        <option value="Industry_Gambling">Industry_Gambling</option>
+                        <option value="Industry_Gas Stations">Industry_Gas Stations</option>
+                        <option value="Industry_Health Care Products Manufacturing">Industry_Health Care Products Manufacturing</option>
+                        <option value="Industry_Health Care Services & Hospitals">Industry_Health Care Services & Hospitals</option>
+                        <option value="Industry_Health, Beauty, & Fitness">Industry_Health, Beauty, & Fitness</option>
+                        <option value="Industry_IT Services">Industry_IT Services</option>
+                        <option value="Industry_Industrial Manufacturing">Industry_Industrial Manufacturing</option>
+                        <option value="Industry_Insurance Agencies & Brokerages">Industry_Insurance Agencies & Brokerages</option>
+                        <option value="Industry_Insurance Carriers">Industry_Insurance Carriers</option>
+                        <option value="Industry_Internet">Industry_Internet</option>
+                        <option value="Industry_Investment Banking & Asset Management">Industry_Investment Banking & Asset Management</option>
+                        <option value="Industry_K-12 Education">Industry_K-12 Education</option>
+                        <option value="Industry_Lending">Industry_Lending</option>
+                        <option value="Industry_Logistics & Supply Chain">Industry_Logistics & Supply Chain</option>
+                        <option value="Industry_Metals Brokers">Industry_Metals Brokers</option>
+                        <option value="Industry_Mining">Industry_Mining</option>
+                        <option value="Industry_Motion Picture Production & Distribution">Industry_Motion Picture Production & Distribution</option>
+                        <option value="Industry_Other Retail Stores">Industry_Other Retail Stores</option>
+                        <option value="Industry_Real Estate">Industry_Real Estate</option>
+                        <option value="Industry_Religious Organizations">Industry_Religious Organizations</option>
+                        <option value="Industry_Research & Development">Industry_Research & Development</option>
+                        <option value="Industry_Security Services">Industry_Security Services</option>
+                        <option value="Industry_Social Assistance">Industry_Social Assistance</option>
+                        <option value="Industry_Sporting Goods Stores">Industry_Sporting Goods Stores</option>
+                        <option value="Industry_Staffing & Outsourcing">Industry_Staffing & Outsourcing</option>
+                        <option value="Industry_Stock Exchanges">Industry_Stock Exchanges</option>
+                        <option value="Industry_TV Broadcast & Cable Networks">Industry_TV Broadcast & Cable Networks</option>
+                        <option value="Industry_Telecommunications Manufacturing">Industry_Telecommunications Manufacturing</option>
+                        <option value="Industry_Telecommunications Services">Industry_Telecommunications Services</option>
+                        <option value="Industry_Transportation Equipment Manufacturing">Industry_Transportation Equipment Manufacturing</option>
+                        <option value="Industry_Transportation Management">Industry_Transportation Management</option>
+                        <option value="Industry_Travel Agencies">Industry_Travel Agencies</option>
+                        <option value="Industry_Trucking">Industry_Trucking</option>
+                        <option value="Industry_Video Games">Industry_Video Games</option>
+                        <option value="Industry_Wholesale">Industry_Wholesale</option>
+                      </select><br>
+                      <label for="sector">Type of sector:</label>                
+                    <select name="sector" id="sector">
+                        <option value="Sector_-1">Sector_-1</option>
+                        <option value="Sector_Accounting & Legal">Sector_Accounting & Legal</option>
+                        <option value="Sector_Aerospace & Defense">Sector_Aerospace & Defense</option>
+                        <option value="Sector_Agriculture & Forestry">Sector_Agriculture & Forestry</option>
+                        <option value="Sector_Arts, Entertainment & Recreation">Sector_Arts, Entertainment & Recreation</option>
+                        <option value="Sector_Biotech & Pharmaceuticals">Sector_Biotech & Pharmaceuticals</option>
+                        <option value="Sector_Business Services">Sector_Business Services</option>
+                        <option value="Sector_Construction, Repair & Maintenance">Sector_Construction, Repair & Maintenance</option>
+                        <option value="Sector_Consumer Services">Sector_Consumer Services</option>
+                        <option value="Sector_Education">Sector_Education</option>
+                        <option value="Sector_Finance">Sector_Finance</option>
+                        <option value="Sector_Government">Sector_Government</option>
+                        <option value="Sector_Health Care">Sector_Health Care</option>
+                        <option value="Sector_Information Technology">Sector_Information Technology</option>
+                        <option value="Sector_Insurance">Sector_Insurance</option>
+                        <option value="Sector_Manufacturing">Sector_Manufacturing</option>
+                        <option value="Sector_Media">Sector_Media</option>
+                        <option value="Sector_Mining & Metals">Sector_Mining & Metals</option>
+                        <option value="Sector_Non-Profit">Sector_Non-Profit</option>
+                        <option value="Sector_Oil, Gas, Energy & Utilities">Sector_Oil, Gas, Energy & Utilities</option>
+                        <option value="Sector_Real Estate">Sector_Real Estate</option>
+                        <option value="Sector_Retail">Sector_Retail</option>
+                        <option value="Sector_Telecommunications">Sector_Telecommunications</option>
+                        <option value="Sector_Transportation & Logistics">Sector_Transportation & Logistics</option>
+                        <option value="Sector_Travel & Tourism">Sector_Travel & Tourism</option>
+                        </select><br>
+                        <label for="revenue">Revenue :</label>
+                        <select name="revenue" id="revenue">
+                        <option value="Revenue_$1 to $2 billion (USD)">Revenue_$1 to $2 billion (USD)</option>
+                        <option value="Revenue_$1 to $5 million (USD)">Revenue_$1 to $5 million (USD)</option>
+                        <option value="Revenue_$10 to $25 million (USD)">Revenue_$10 to $25 million (USD)</option>
+                        <option value="Revenue_$10+ billion (USD)">Revenue_$10+ billion (USD)</option>
+                        <option value="Revenue_$100 to $500 million (USD)">Revenue_$100 to $500 million (USD)</option>
+                        <option value="Revenue_$2 to $5 billion (USD)">Revenue_$2 to $5 billion (USD)</option>
+                        <option value="Revenue_$25 to $50 million (USD)">Revenue_$25 to $50 million (USD)</option>
+                        <option value="Revenue_$5 to $10 billion (USD)">Revenue_$5 to $10 billion (USD)</option>
+                        <option value="Revenue_$5 to $10 million (USD)">Revenue_$5 to $10 million (USD)</option>
+                        <option value="Revenue_$50 to $100 million (USD)">Revenue_$50 to $100 million (USD)</option>
+                        <option value="Revenue_$500 million to $1 billion (USD)">Revenue_$500 million to $1 billion (USD)</option>
+                        <option value="Revenue_-1">Revenue_-1</option>
+                        <option value="Revenue_Less than $1 million (USD)">Revenue_Less than $1 million (USD)</option>
+                        <option value="Revenue_Unknown / Non-Applicable">Revenue_Unknown / Non-Applicable</option>
+                        </select>
+                        <br>
+                        <label for="job_state">Job state :</label>
+                        <select name="job_state" id="job_state">
+                        <option value="job_state_ AL">job_state_ AL</option>
+                        <option value="job_state_ AZ">job_state_ AZ</option>
+                        <option value="job_state_ CA">job_state_ CA</option>
+                        <option value="job_state_ CO">job_state_ CO</option>
+                        <option value="job_state_ CT">job_state_ CT</option>
+                        <option value="job_state_ DC">job_state_ DC</option>
+                        <option value="job_state_ DE">job_state_ DE</option>
+                        <option value="job_state_ FL">job_state_ FL</option>
+                        <option value="job_state_ GA">job_state_ GA</option>
+                        <option value="job_state_ IA">job_state_ IA</option>
+                        <option value="job_state_ ID">job_state_ ID</option>
+                        <option value="job_state_ IL">job_state_ IL</option>
+                        <option value="job_state_ IN">job_state_ IN</option>
+                        <option value="job_state_ KS">job_state_ KS</option>
+                        <option value="job_state_ KY">job_state_ KY</option>
+                        <option value="job_state_ LA">job_state_ LA</option>
+                        <option value="job_state_ Los Angeles">job_state_ Los Angeles</option>
+                        <option value="job_state_ MA">job_state_ MA</option>
+                        <option value="job_state_ MD">job_state_ MD</option>
+                        <option value="job_state_ MI">job_state_ MI</option>
+                        <option value="job_state_ MN">job_state_ MN</option>
+                        <option value="job_state_ MO">job_state_ MO</option>
+                        <option value="job_state_ NC">job_state_ NC</option>
+                        <option value="job_state_ NE">job_state_ NE</option>
+                        <option value="job_state_ NJ">job_state_ NJ</option>
+                        <option value="job_state_ NM">job_state_ NM</option>
+                        <option value="job_state_ NY">job_state_ NY</option>
+                        <option value="job_state_ OH">job_state_ OH</option>
+                        <option value="job_state_ OR">job_state_ OR</option>
+                        <option value="job_state_ PA">job_state_ PA</option>
+                        <option value="job_state_ RI">job_state_ RI</option>
+                        <option value="job_state_ SC">job_state_ SC</option>
+                        <option value="job_state_ TN">job_state_ TN</option>
+                        <option value="job_state_ TX">job_state_ TX</option>
+                        <option value="job_state_ UT">job_state_ UT</option>
+                        <option value="job_state_ VA">job_state_ VA</option>
+                        <option value="job_state_ WA">job_state_ WA</option>
+                        <option value="job_state_ WI">job_state_ WI</option>
+                        </select>
+                        <br>
+                        <label for="job_simple">Job Simple :</label>
+                        <select name="job_simple" id ="job_simple">
+                        <option value="Job Simple_Analytics Consultant">Job Simple_Analytics Consultant</option>
+                        <option value="Job Simple_data analyst">Job Simple_data analyst</option>
+                        <option value="Job Simple_data engineer">Job Simple_data engineer</option>
+                        <option value="Job Simple_data modeler">Job Simple_data modeler</option>
+                        <option value="Job Simple_data scientist">Job Simple_data scientist</option>
+                        <option value="Job Simple_director">Job Simple_director</option>
+                        <option value="Job Simple_manager">Job Simple_manager</option>
+                        <option value="Job Simple_mle">Job Simple_mle</option>
+                        <option value="Job Simple_senior/associate scientist">Job Simple_senior/associate scientist</option>
+                        <option value="Job Simple_vp">Job Simple_vp</option>
+                        </select>
+                        <br>
+                        <label for="seniority">Seniority :</label>
+                        <select value="seniority" id="seniority">
+                        <option value="seniority_jr">seniority_jr</option>
+                        <option value="seniority_na">seniority_na</option>
+                        <option value="seniority_senior">seniority_senior</option>
+                        </select><br><br></b>
+                        <input type="submit" , value='predict' >
+
+            </form>
+
+
+    </body>
+
+
+
+</html>
